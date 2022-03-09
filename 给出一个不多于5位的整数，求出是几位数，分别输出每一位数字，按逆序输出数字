@@ -1,3 +1,33 @@
+for循环和数组
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+	int n, i, j, k, b[5];
+	printf("Please enter number: ");
+	for (i=0; ; i++){
+		scanf("%d", &n);
+		if (n<100000) break;
+		else printf("Error!\nPlease enter number: ");
+	}
+	for (i=1, j=1; i<=10000; i*=10, j++)
+		if (n/i>0&&n/i<10){
+			printf("Bit=%d\n", j);
+			break;
+		}
+	for (k=0; i>=1; b[k++]=n/i, n%=i, i/=10);
+	for (i=0; i<j; printf("%d ", b[i++]));
+	printf("\n");
+	for (i=j-1; i>=0; printf("%d ", b[i--]));
+	printf("\n");
+	return 0;
+}
+
+
+
+
+
+
+
 条件选择结构
 #include <stdio.h>
 #include <stdlib.h>
@@ -159,32 +189,6 @@ void error(){
 }
 
 
-
-
-
-for循环和数组
-#include <stdio.h>
-#include <stdlib.h>
-int main(){
-	int n, i, j, k, b[5];
-	printf("Please enter number: ");
-	for (i=0; ; i++){
-		scanf("%d", &n);
-		if (n<100000) break;
-		else printf("Error!\nPlease enter number: ");
-	}
-	for (i=1, j=1; i<=10000; i*=10, j++)
-		if (n/i>0&&n/i<10){
-			printf("Bit=%d\n", j);
-			break;
-		}
-	for (k=0; i>=1; b[k++]=n/i, n%=i, i/=10);
-	for (i=0; i<j; printf("%d ", b[i++]));
-	printf("\n");
-	for (i=j-1; i>=0; printf("%d ", b[i--]));
-	printf("\n");
-	return 0;
-}
 
 
 
