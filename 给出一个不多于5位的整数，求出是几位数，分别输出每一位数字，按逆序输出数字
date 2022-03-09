@@ -41,7 +41,6 @@ int main(){
         printf("%d is 1 bits!\n", x);
         printf("%d\n", x);
     }
-    system("pause");
     return 0;
 }
 
@@ -88,7 +87,6 @@ int main(){
 	for (i = bit-1; i >= 0; i--)
 		printf("%d ", n[i]);
 	printf("\n");
-	system("pause");
 	return 0;
 }
 
@@ -111,7 +109,6 @@ int main(){
 	bits(num);                      //调用数字位数函数
 	output(num);                    //调用数字输出函数
 	re_output(num);                 //调用数字逆序输出函数
-	system("pause");
 	return 0;
 }
 //输入函数
@@ -186,7 +183,6 @@ int main(){
 	printf("\n");
 	for (i=j-1; i>=0; printf("%d ", b[i--]));
 	printf("\n");
-	system("pause");
 	return 0;
 }
 
@@ -208,7 +204,6 @@ int main(){
 	bits(*num);
 	output(*num);
 	reverse(*num);
-	system("pause");
 	return 0;
 }
 void input(int *n){
